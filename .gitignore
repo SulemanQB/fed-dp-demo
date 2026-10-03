@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.pt
+*.pth
+.DS_Store
+outputs/
+**/.pytest_cache/
+**/MNIST/
+data/*
+!data/.gitkeep
+analysis.md
+
+.vscode/

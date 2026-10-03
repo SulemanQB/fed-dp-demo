@@ -1,0 +1,22 @@
+flowchart TD
+    A[SERVER] --> B[Global Model]
+    B --> C1[Client 1]
+    B --> C2[Client 2]
+    B --> Cn[Client N]
+    C1 --> D1[Local Data]
+    C2 --> D2[Local Data]
+    Cn --> Dn[Local Data]
+    D1 --> T1[Local Train]
+    D2 --> T2[Local Train]
+    Dn --> Tn[Local Train]
+    T1 --> P1[Optional DP]
+    T2 --> P2[Optional DP]
+    Tn --> Pn[Optional DP]
+    P1 --> U1[Model Updates]
+    P2 --> U2[Model Updates]
+    Pn --> Un[Model Updates]
+    U1 --> F[FedAvg]
+    U2 --> F
+    Un --> F
+    F --> B
+    B --> E[Evaluation]

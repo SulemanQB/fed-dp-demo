@@ -1,0 +1,5 @@
+configuration,num_clients,rounds,local_epochs,epsilon,delta,noise_multiplier,max_grad_norm,accuracy,test_loss,seed,run_id
+FedAvg,5,5,1,N/A,1e-05,0.0,1.0,14.666667,2.26403,42,run-1
+DP-Strong,5,5,1,10.979823,1e-05,1.5,1.0,12.333333,2.299045,42,run-2
+DP-Medium,5,5,1,22.086591,1e-05,1.0,1.0,12.333333,2.298986,42,run-3
+DP-Weak,5,5,1,77.268854,1e-05,0.5,1.0,12.0,2.298948,42,run-4
